@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // 2634. Filter Elements from Array
 
 // Given an integer array arr and a filtering function fn, return a filtered array filteredArr.
@@ -6,7 +7,7 @@
 
 // arr[i] - number from the arr
 // i - index of arr[i]
-// filteredArr should only contain the elements from the arr for which the expression fn(arr[i], i) 
+// filteredArr should only contain the elements from the arr for which the expression fn(arr[i], i)
 // evaluates to a truthy value.A truthy value is a value where Boolean(value) returns true.
 
 // Please solve it without the built -in Array.filter method.
@@ -37,20 +38,18 @@
 // 0 <= arr.length <= 1000
 //     - 109 <= arr[i] <= 109
 
-
 // Solution:
 // const arr = [0, 10, 20, 30];
 // const arr = [1, 2, 3];
 const arr = [-2, -1, 0, 1, 2];
 
+// function moreThanTen(n) {
+//     return n > 10;
+// }
 
-function moreThanTen(n) {
-    return n > 10;
-}
-
-function firstIndex(n, i) {
-    return i === 0; 
-}
+// function firstIndex(n, i) {
+//     return i === 0;
+// }
 
 function plusOne(n) {
     return n + 1;
